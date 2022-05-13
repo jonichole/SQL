@@ -1,0 +1,23 @@
+Create table Office_Supplies (id integer primary key, product text, ordered integer, price numeric, Amount_sold integer);
+Insert into Office_Supplies values
+(1, "white boards", 150, 4.98, 76),
+(2, "clipboards", 20, 2.34, 20),
+(3, "paper", 100, 3.67,43),
+(4, "pens", 75, 1.88, 52),
+(5, "staples", 250, 1.19, 225),
+(6, "lamps", 30, 13.77, 12),
+(7, "folders", 100, 1.06, 62),
+(8, "markers", 200, 5.28, 163),
+(9, "stapler", 75, 3.55, 74),
+(10, "binders", 50, 2.04, 47),
+(11, "tape", 80, 2.44, 43),
+(12, "rubber bands", 15, 1.50, 15),
+(13, "calculators", 100, 2.39, 83),
+(14, "erasers", 300, .77, 148),
+(15, "sciccors", 200, 2.22, 163);
+
+Select * from Office_Supplies order by price; 
+Select * from Office_Supplies where ordered=amount_sold;
+
+Select avg(price) from Office_Supplies;
+
